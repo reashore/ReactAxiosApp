@@ -16,7 +16,7 @@ class App extends React.Component {
   componentDidMount() {
     if (!this.state.data) {
       this.getData(this.url)
-        .then(data => this.setState({data}))
+        .then(data => this.setState({data: data}))
         .catch(error => console.log(error));
     }
   }
